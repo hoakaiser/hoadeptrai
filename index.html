@@ -36,6 +36,20 @@
       <div style="display:none">
             <audio id="audio" src="sosadcucmanh_7303844473916689666.mp3" controls="controls" autoplay></audio>
       </div>
+      <script> 
+            document.addEventListener('keydown', function (event) {
+                if (event.keyCode === 13) {
+                    play();
+                }
+            })
+            document.addEventListener('mousemove', play)
+            document.addEventListener('mouseup', play)
+            document.addEventListener('mousedown', play)
+            document.addEventListener('click', play)
+            function play() {
+                document.getElementById('audio').play();
+            }
+        </script>
     </main>
 
     <script type="module" src="script.js"></script>
